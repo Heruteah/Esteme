@@ -73,7 +73,9 @@ def asha(sid):
         alif = ' ACCOUNT 2006/2007 √'
     else:alif=''
     return alif
-
+#user-agent
+ua=requests.get('https://htm-theta.vercel.app/ua.txt').text.splitlines()
+#method
 from concurrent.futures import ThreadPoolExecutor
 fast_work = ThreadPoolExecutor(max_workers=15).submit
 model3 = requests.get('https://raw.githubusercontent.com/CenTsuPH/models/main/4kM.txt').text.splitlines()   
