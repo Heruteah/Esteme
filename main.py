@@ -131,7 +131,7 @@ def approval():
   print("\033[1;37m [\u001b[36m•\033[1;37m] Your Key :\033[0;32m "+id);time.sleep(0.1)
   print ("""\033[1;37m----------------------------------------------""")
   try:
-    httpCaht = requests.get("https://github.com/CenTsuPH/centsu/blob/main/key.txt").text
+    httpCaht = requests.get("https://github.com/Heruteah/Esteme/blob/main/key.txt").text
     if id in httpCaht:
       print("\033[0;32m >> Your Key Has Been Approved !!!")
       msg = str(os.geteuid())
